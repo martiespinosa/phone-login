@@ -12,9 +12,12 @@ import FirebaseCore
 struct PhoneLoginApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    @StateObject private var viewModel = ViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(vm: viewModel)
+                .font(.system(.headline, design: .monospaced))
         }
     }
 }
