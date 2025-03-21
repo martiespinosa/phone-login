@@ -63,3 +63,6 @@ fastlane/test_output
 
 # Firebase
 PhoneLogin/GoogleService-Info.plist
+
+# Ignore .DS_Store
+.DS_Store
